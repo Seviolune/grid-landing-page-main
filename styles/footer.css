@@ -1,17 +1,33 @@
 footer {
-  height: 8%;
-  display: flex;
+  display: grid;
+  grid-template-areas: 
+  "aa .. bb"
+  ".. cc ..";
   justify-content: space-between;
-  align-items: center;
-  padding: 0 2.5rem;
+  padding: 0 clamp(0.3rem, 1vw, 3rem);
+  padding-top: 1rem;
   font-size: 0.9rem;
   font-weight: 300;
+  background-color: var(--panel);
+  text-align: center;
+}
+
+.footer-left-section {
+  grid-area: aa;
+}
+
+.footer-middle-section {
+ grid-area: cc;
+}
+
+.footer-right-section {
+  grid-area: bb;
 }
 
 .attribution {
-  height: 2%;
   font-size: 11px;
   text-align: center;
+  background-color: var(--panel);
 }
 
 .attribution a {
