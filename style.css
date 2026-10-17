@@ -1,16 +1,117 @@
 body {
   font-family: Inter, Arial;
-}
-header {
-  position: fixed;
+  font-weight: 200;
+  margin: 0;
+  min-height: 100vh;
+  color: white;
   background-color: hsl(228, 99%, 58%);
-  inset: 0 0 auto 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+
+header {
+  height: 4rem;
+}
+
+main {
+  height: 100%;
+}
+
+ul {
+  height: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-areas: 
+  "ff aa bb"
+  "ff cc dd";
+}
+
+ul > :nth-child(1) {
+  grid-area: ff;
+}
+
+ul > :nth-child(2) {
+  grid-area: aa;
+}
+
+ul > :nth-child(3) {
+  grid-area: bb;
+}
+
+ul > :nth-child(4) {
+  grid-area: cc;
+}
+
+ul > :nth-child(5) {
+  grid-area: dd;
+}
+
+ul > * {
+  border: 1px solid hsl(220, 100%, 64%);
+  position: relative;
+  padding: 3rem;
+}
+
+ul > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3.2rem;
+  padding-right: 11.5rem;
+}
+
+.main-title {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.main-subtitle {
+  font-weight: 150;
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+.stat-number {
+  position: absolute;
+  inset: 1.8rem 1.8rem auto auto;
+  font-size: 2.15rem;
+  font-weight: 500;
+}
+
+.stat-image {
+  position: absolute;
+  inset: 1.8rem auto auto 1.8rem;
+}
+
+.stat-text {
+  margin-top: 12rem;
+}
+
+.stat-title {
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+
+.stat-subtitle {
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(224, 100%, 95%);
+  text-decoration: underline;
 }
