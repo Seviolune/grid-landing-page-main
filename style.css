@@ -1,0 +1,16 @@
+body {
+  font-family: Inter, Arial;
+}
+header {
+  position: fixed;
+  background-color: hsl(228, 99%, 58%);
+  inset: 0 0 auto 0;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
