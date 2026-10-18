@@ -47,7 +47,3 @@ function updateHamburgerMenuButtonImage() {
 hamburgerButtonElement.addEventListener('click', () => {
  toggleMenuVisibility();
 });
-
-
-
-toggleMenuVisibility();
