@@ -1,0 +1,41 @@
+:root {
+--bg: hsl(220, 100%, 64%);
+--panel: hsl(228, 99%, 58%);
+--panel-hover: hsl(220, 100%, 64%);
+--li-padding: clamp(1.8rem, 4vw, 4rem);
+--border-size: 1.8px;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/inter/inter-variable.ttf);
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 200;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--border-size);
+  color: white;
+  background-color: var(--bg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
