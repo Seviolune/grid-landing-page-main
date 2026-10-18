@@ -1,0 +1,41 @@
+nav {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+}
+
+nav.active {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+nav > ul {
+  display: block;
+  padding: clamp(1rem, 10vh, 8rem) 0;
+  margin-top: calc(var(--header-height));
+  background-color: var(--panel);
+}
+
+nav > ul > li > a {
+  display: block;
+  padding: clamp(0.5rem, 2vh, 1.5rem) 0;
+  font-size: clamp(2.5rem, 5vh, 3.2rem);
+  font-weight: 380;
+  text-align: center;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* desktop query */
+@media (min-width: 948px) {
+  nav > ul {
+    margin-top: calc(var(--header-height) + var(--border-size));
+    position: fixed;
+    inset: 0 0 0 auto;
+  }
+    nav > ul > li > a {
+    text-align: right;
+    padding-inline: clamp(10rem, 20vw, 50rem) clamp(4rem, 4vw, 12rem) ;
+  }
+}

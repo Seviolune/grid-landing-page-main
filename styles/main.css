@@ -3,8 +3,7 @@ main {
   min-height: 0;
 }
 
-ul {
-  list-style: none;
+main > ul {
   display: grid;
   grid-template-rows: 1.2fr repeat(4, 1fr);
   gap: var(--border-size);
@@ -88,34 +87,34 @@ ul {
     height: 100dvh;
   }
 
-  ul {
+  main > ul {
     grid-template-rows: auto;
     grid-template-areas: 
     "ff aa bb"
     "ff cc dd";
   }
 
-  ul > :nth-child(1) {
+  main > ul > :nth-child(1) {
     grid-area: ff;
   }
 
-  ul > :nth-child(2) {
+  main > ul > :nth-child(2) {
     grid-area: aa;
   }
 
-  ul > :nth-child(3) {
+  main > ul > :nth-child(3) {
     grid-area: bb;
   }
 
-  ul > :nth-child(4) {
+  main > ul > :nth-child(4) {
     grid-area: cc;
   }
 
-  ul > :nth-child(5) {
+  main > ul > :nth-child(5) {
     grid-area: dd;
   }
 
-  ul > * {
+  main > ul > * {
     display: flex;
     flex-direction: column;
     justify-content: end;

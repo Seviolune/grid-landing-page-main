@@ -4,7 +4,8 @@ header {
   align-items: center;
   position: sticky;
   inset: 0 0 auto 0;
-  padding: 0.8rem clamp(1rem, 3vw, 3rem);
+  padding: 0 clamp(1rem, 3vw, 3rem);
+  height: var(--header-height);
   border-block-end: var(--border-size) solid var(--bg);
   background-color: var(--panel);
   z-index: 100;
