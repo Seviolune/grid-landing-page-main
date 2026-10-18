@@ -4,9 +4,9 @@ header {
   align-items: center;
   position: sticky;
   inset: 0 0 auto 0;
-  padding: 0 clamp(1rem, 3vw, 3rem);
-  background-color: var(--panel);
+  padding: 0.8rem clamp(1rem, 3vw, 3rem);
   border-block-end: var(--border-size) solid var(--bg);
+  background-color: var(--panel);
   z-index: 100;
 }
   
@@ -33,4 +33,11 @@ header {
 
 .hamburger-menu:hover {
   background-color: var(--panel-hover);
+}
+
+/* desktop query */
+@media (min-width: 948px) {
+  header {
+    border-block-end: none;
+  }
 }

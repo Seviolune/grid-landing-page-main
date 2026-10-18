@@ -1,11 +1,10 @@
 footer {
   display: grid;
   grid-template-areas: 
-  "aa .. bb"
-  ".. cc ..";
+  "aa .. bb";
   justify-content: space-between;
-  padding: 0 clamp(0.3rem, 1vw, 3rem);
-  padding-top: 1rem;
+  padding: 1.8rem clamp(0.3rem, 3vw, 3rem);
+  padding-bottom: 1.2rem;
   font-size: 0.9rem;
   font-weight: 300;
   background-color: var(--panel);
@@ -16,10 +15,6 @@ footer {
   grid-area: aa;
 }
 
-.footer-middle-section {
- grid-area: cc;
-}
-
 .footer-right-section {
   grid-area: bb;
 }
@@ -27,6 +22,7 @@ footer {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: calc(var(--border-size) * -1);
   background-color: var(--panel);
 }
 

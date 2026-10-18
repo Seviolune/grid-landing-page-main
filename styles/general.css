@@ -1,7 +1,8 @@
 :root {
 --bg: hsl(220, 100%, 64%);
 --panel: hsl(228, 99%, 58%);
---panel-hover: hsl(220, 100%, 64%);
+--panel-hover: hsl(228, 100%, 60%);
+--panel-active: hsl(220, 100%, 64%);
 --li-padding: clamp(1.8rem, 4vw, 4rem);
 --border-size: 1.8px;
 }
@@ -18,8 +19,9 @@ body {
   font-family: Inter, Arial, sans-serif;
   font-weight: 200;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
   gap: var(--border-size);
+  margin-top: calc(var(--border-size) * -1);
   color: white;
   background-color: var(--bg);
 }
@@ -35,7 +37,15 @@ img {
 }
 
 button {
-  background: none;
-  border: none;
+  background: unset;
+  border: unset;
+  font: inherit;
   cursor: pointer;
+}
+
+/* desktop query */
+@media (min-width: 948px) {
+  body {
+    margin-top: 0;
+  }
 }

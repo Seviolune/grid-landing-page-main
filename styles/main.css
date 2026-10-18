@@ -10,18 +10,15 @@ ul {
   gap: var(--border-size);
 }
 
-ul > * {
-  position: relative;
-  padding: var(--li-padding);
-  background-color: var(--panel);
-}
-
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 3.2rem;
   padding-right: clamp(1.8rem, 20vw, 20rem);
+  position: relative;
+  padding: var(--li-padding);
+  background-color: var(--panel);
 }
 
 .main-title {
@@ -33,6 +30,28 @@ ul > * {
   font-weight: 150;
   font-size: 1rem;
   line-height: 1.9rem;
+}
+
+.stat-button {
+  display: flex;
+  align-items: end;
+  position: relative;
+  padding: var(--li-padding);
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  color: white;
+  background-color: var(--panel);
+  transition: background-color 0.15s;
+}
+
+.stat-button:hover {
+  background-color: var(--panel-hover);
+}
+
+.stat-button:active {
+  background-color: var(--panel-active);
+  transition: background-color 0s;
 }
 
 .stat-number {
