@@ -20,6 +20,7 @@ Users should be able to:
 
 ### Links
 
+- Github repository URL: [https://github.com/Seviolune/grid-landing-page-main](https://github.com/Seviolune/grid-landing-page-main)
 - Solution URL: [https://www.frontendmentor.io/solutions/animated-and-responsive-grid-landing-page-with-html-css-and-js-YItIuA7v_k](https://www.frontendmentor.io/solutions/animated-and-responsive-grid-landing-page-with-html-css-and-js-YItIuA7v_k)
 - Live Site URL: [https://seviolune.github.io/grid-landing-page-main](https://seviolune.github.io/grid-landing-page-main)
 
