@@ -4,7 +4,7 @@ function animateCount(element, targetNum, {
   suffix   = ''
 } = {}) {
   const start = performance.now();
-  const fmt = new Intl.NumberFormat('en-US', {
+  const outputNum = new Intl.NumberFormat('en-US', {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals,
   });
@@ -12,7 +12,7 @@ function animateCount(element, targetNum, {
   function tick(now) {
     const p = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - p, 3);        // ease-out cubic
-    element.textContent = fmt.format(targetNum * eased) + suffix;
+    element.textContent = outputNum.format(targetNum * eased) + suffix;
     if (p < 1) requestAnimationFrame(tick);
   }
 
