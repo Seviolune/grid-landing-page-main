@@ -35,10 +35,3 @@ header {
 .hamburger-menu:hover {
   background-color: var(--panel-hover);
 }
-
-/* desktop query */
-@media (min-width: 948px) {
-  header {
-    border-block-end: none;
-  }
-}

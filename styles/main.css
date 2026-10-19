@@ -88,6 +88,7 @@ main > ul {
   }
 
   main > ul {
+    margin-top: calc(var(--border-size) * -1);
     grid-template-rows: auto;
     grid-template-areas: 
     "ff aa bb"
