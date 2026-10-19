@@ -2,6 +2,8 @@
 
 This is a solution to the [Grid landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/grid-landing-page).
 
+Feel free to tell me anything I could improve on.
+
 ## Overview
 
 ### The challenge
@@ -18,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Nothing here yet](https://example.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/animated-and-responsive-grid-landing-page-with-html-css-and-js-YItIuA7v_k](https://www.frontendmentor.io/solutions/animated-and-responsive-grid-landing-page-with-html-css-and-js-YItIuA7v_k)
 - Live Site URL: [https://seviolune.github.io/grid-landing-page-main](https://seviolune.github.io/grid-landing-page-main)
 
 ## Author
